@@ -1,0 +1,336 @@
+*,*:before,*:after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Variables */
+--color: color:#FFC61F;
+
+
+/* Contenedor general */
+#boxFluid{
+}
+/* Contenedor general */
+/* Card texel */
+#cardBox{
+  max-width: 1024px;
+  background-color: #eee;
+  margin:auto auto;
+  width: 95vw;
+  height: 95vh; 
+  margin-top: 2vh;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
+  text-align: center;
+}
+/* Card texel */
+
+
+/* Index Texel */
+/*  */
+.imgLogo{
+  max-width: 350px; 
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.card-title{
+  font-size: 6.5em;
+}
+
+.card-text{
+  font-size: 2em;
+}
+.btn-texel{
+  border-radius:150px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.19);
+  width: 80%; 
+  font-size: 1.7em;
+  background-color: #FFC61F; 
+  border-color:#FFC61F; 
+  letter-spacing: 3px;
+}
+.btn-texel:hover{
+  border: 1px solid rgba(0,0,0,0.43);
+  background-color: #FFC61F; 
+}
+/* FIN Index Texel */
+/* SecondPage */
+.col-btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+}
+.col-back{
+  height: 20vh;
+}
+.btn-back{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #FFC61F;
+  margin-left: 25px;
+  padding: 0;
+  line-height: 50px;
+  color: #eee;
+  border-radius: 50px;
+  font-size: 1.2em;
+
+  text-align: center;
+}
+.btn-back:hover{
+  border: 1px solid rgba(0,0,0,0.43);
+  background-color: #FFC61F;
+  color: #eee;
+}
+
+/*FIN SecondPage */
+
+/* Busqueda por DNI */
+.input-Search{
+  width: 95%;
+  height: 55px;
+  border:none;
+  border-radius:50px;
+  font-size: 2em;
+  padding-left: 25px;
+  
+  box-shadow:0 10px 20px rgba(0,0,0,0.19);
+}
+.input-Search:focus{
+  outline: none;
+}
+.input-Search:hover{
+  
+  border: 1px solid rgba(0,0,0,0.43);
+}
+/*FIN Busqueda por DNI */
+
+/* Nuevo Paciente */
+.form-New-P{
+  width: 100%;
+}
+.label-form{
+  width: 80%;
+  text-align: left;
+}
+.label-form span{
+  color: #FFC61F;
+  font-weight: 700;
+  font-size: 1.1em;
+  text-shadow: 0px 1px rgba(0,0,0,0.43);
+}
+  .input-form{
+    border:none;
+    background-color: #eee;
+    border-bottom:1.5px solid #FFC61F;
+    width: 100%;
+    font-size: 1.3em;
+  }
+  .input-form:focus{
+    outline: none;
+  }
+  .col-inputs-form{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .col-inputs-form .label-form{
+    width: 54%;
+  }
+  .btn-ingresarpaciente{
+    width: 50%;
+  }
+  .col-back-nuevoPaciente{
+    height: 10vh;
+  }
+/*FIN Nuevo Paciente */
+
+/* pagina FUNCIONES */
+.firts-colFunc-col8{
+  width: 100%;
+  height:250px;
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  align-items: center;
+}
+.boxDobleBtn{
+  display:flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height:150px;
+  overflow: hidden;
+}
+.btn-doble{
+  display: block;
+  width: 50px;
+  background-color: #FFC61F;
+  border:1px solid rgba(0,0,0,0.19);
+  padding: 0;
+  height: 50px;
+  border-radius:50px;
+  line-height: 50px;
+  color: #eee;
+  box-shadow:0 2px 5px rgba(0,0,0,0.19);
+}
+.btn-simple{
+  border-radius:10px;
+  color:white;
+  font-size:1.7em;
+  display:block;
+  background-color: #FFC61F;
+  width: 100%;
+  height:70px;
+  padding: 0;
+  line-height:70px;
+  margin-bottom:10px;
+  border:1px solid rgba(0,0,0,0.19);
+}
+/* col8 inputs */
+
+.col-centralInputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.inputsBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.btn-medio{
+  color:white;
+  background-color:#FFC61F;
+  margin-top:25px;
+}
+.text-inputFunc{
+  margin:0;
+  padding:0;
+  padding-top:25px;
+  font-size:1.7em;
+  color:#FFC61F;
+  text-shadow: 1px 1px rgba(0,0,0,0.19);
+}
+
+.inputCentral{
+  margin:0;
+  padding:0;
+  font-size:5em; 
+  color:#FFC61F; 
+  text-shadow: 2px 2px rgba(0,0,0,0.19);
+}
+.inputCentral small{
+  font-size:0.7em;
+}
+
+.btn-inicio{
+  margin-bottom: 15px;
+  margin-top: 15px; 
+  box-shadow:0 10px 20px rgba(0,0,0,0.19); width: 30%; font-size: 1.4em; 
+  background-color: #FFC61F; 
+  border-color:#FFC61F; 
+  letter-spacing: 3px;
+  box-shadow:0 2px 5px rgba(0,0,0,0.19);
+  /* border:1px solid rgba(0,0,0,0.43); */
+}
+.btn-pause{
+  margin-bottom: 15px;
+  margin-top: 15px;
+  box-shadow:0 10px 20px rgba(0,0,0,0.19); font-size: 1.4em; background-color: #FFC61F; 
+  border-color:#FFC61F;
+  box-shadow:0 2px 5px rgba(0,0,0,0.19);
+  /* border:1px solid rgba(0,0,0,0.43); */
+}
+/*FIN col8 inputs */
+/* hover btn */
+.btn-hov{
+  background-color: #FFC61F!important;
+  border-color: rgba(0,0,0,0.19)!important;
+  color:#eee!important;
+}
+/* hover btn */
+/* col-info */
+.info{
+  border:2px solid rgba(0,0,0,0.23);
+  background-color:orange; 
+  border-radius:5px; color: white;
+  text-shadow:1px 1px rgba(0,0,0,0.23);
+}
+/* Fin col-info */
+/* FIN pagina FUNCIONES */
+.cardBox{
+  border: 1px solid black;
+  height: 90vh;
+}
+
+.img-corp{
+  text-align: center;
+  padding-top: 25px;
+}
+
+a{
+  display: block;
+  padding:50px 0;
+}
+
+.nav{
+  width: 100%;
+    height: 94.7vh;
+    box-shadow:0 0 4px black;
+    background-color: orange;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  .headerNav{
+    width: 100%;
+    text-align: left;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .headerNav img{
+    width: 50%;
+  }
+  .links{
+    width: 100%;
+    text-align: left;
+  
+  }
+  .linkConf{
+    display:block;
+    font-size: 1em;
+    width: 100%;
+    border-bottom: 2px solid rgba(0,0,0,0.23);
+    padding:15px 0;
+    color: white;
+    text-shadow: 1px 1px rgba(0,0,0,0.23);
+    text-decoration: none;
+    padding-left:15px;
+  }
+  .linkConf:hover{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+  }
+  .col8Texel{
+    width: 100%;
+    margin: 0;  padding: 0;
+    top: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .boxImagenUsuario{
+    width: 100%;
+    text-align: left;
+    padding-left: 10px;
+    border-bottom:1.5px solid rgba(0,0,0,0.43);
+  }
