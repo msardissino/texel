@@ -318,7 +318,6 @@
 
 .btn-inicio{
   margin-bottom: 40px;
-  margin-top: -20px; 
   box-shadow:0 10px 20px rgba(0,0,0,0.19); width: 30%; font-size: 1.4em; 
   background-color: #FFC61F; 
   border-color:#FFC61F; 
@@ -328,7 +327,6 @@
 }
 .btn-pause{
   margin-bottom: 40px;
-  margin-top: -20px;
   box-shadow:0 10px 20px rgba(0,0,0,0.19); font-size: 1.4em; background-color: #FFC61F; 
   border-color:#FFC61F;
   box-shadow:0 2px 5px rgba(0,0,0,0.19);
