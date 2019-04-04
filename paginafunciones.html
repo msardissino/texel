@@ -19,10 +19,15 @@
 </head>
 <body style="background:#FFC61F">
  <div class="container-fluid" id="BoxFluid">
-    <div class="card" id="cardBox"  style="display: flex; flex-direction: column; justify-content: space-between;">
-        <div class="row rowUno" style="max-width: 100%, padding:0;margin:0; padding-top:25px;">
+    <div class="card" id="cardBox"  style="">
+      <div class="row">
+          <div class="col-12 col-logo">
+              <img src="texel-logo.png" width="250" style="" class="imgLogo" alt="TexelLogo">
+            </div>  <!--FIN col-12 LOGO-->
+      </div>
+        <div class="row rowUno" >
             <div class="col-2">
-              <img src="texel-isotipoAmarillo.png" width="80" alt="">
+              <!-- <img src="texel-isotipoAmarillo.png" width="80" alt=""> -->
             </div>
             <div class="col-8">
                 <div class="row unoInterna">
@@ -46,7 +51,7 @@
                     </div>
                     <p class="inputCentral"style="">2.0 <small>J</small> </p>
                   </div> 
-                  <div class="col-2" class="secondCol2" id="col2ulti" style="display: flex; flex-direction: column; justify-content: flex-end; height:250px">
+                  <div class="col-2" class="secondCol2" id="col2ulti" style="display: flex; flex-direction: column; justify-content: flex-end; height:220px">
                       <a href="#" class="btn-simple btn-hov"><i class="icon-up-open"></i></a>
                   </div>
                 </div>   <!--Fin  ROW unoInterna col 8 -->
@@ -59,31 +64,40 @@
                 </div>
             </div> <!-- Fin col 8 -->
             
-           <div class="col-2" >
+           <div class="col-2 col-info" >
               <div class="info">
-                <p style="font-size: .9em;">Profundidad</p>
+                <p style="font-size: .7em;">Profundidad</p>
                 <p>4.5 mm</p>
                 <p>CABEZA FACIAL</p>
               </div>
                 
               </div>  <!--Fin col 2  segunda -->
          </div>   <!--Fin ROW 1-->
-         <div class="card-footer" style="background:orange; border-top:2px solid rgba(0,0,0,0.23);">
-            <div class="row footer-row" style="">
-              <div class="col-4" style="border-right:2px solid rgba(0,0,0,0.23);">
-                <a href="configpage.html"style="color:white; text-shadow:1px 1px rgba(0,0,0,0.19); font-size:1.2em; display:block; width: 100%; height: 100%; padding: 0;" >
-                    <i class="icon-cog" ></i>
-                </a>
-              </div>
-              <div class="col-4" style="border-right:2px solid rgba(0,0,0,0.23);">
-                <i class="icon-user" style="color:white; text-shadow:1px 1px rgba(0,0,0,0.19); font-size:1.2em;"></i></div>
-              <div class="col-4" style="">
-                <a href="index.html" style="padding:0 ;color:white; text-shadow:1px 1px rgba(0,0,0,0.19); font-size:1.2em;">
-                  <i class="icon-reply-all" ></i>
-                </a>
-                </div>
+         <div class="row">
+            <div class="col-12 col-footer-second-page">
+                <div class="card-footer">
+                    <div class="row footer-row">
+                      <div class="col-4 btn-footer" style="">
+                        <a href="configpage.html" class="link-footer">
+                            <i class="icon-cog" ></i>
+                        </a>
+                      </div>
+                      <div class="col-4 btn-footer" style="">
+                        <a href="#" class="link-footer">
+    
+                          <i class="icon-user" style=""></i>
+                        </a>
+                      </div>
+                      <div class="col-4 btn-footer" style="">
+                        <a href="index.html" class="link-footer">
+    
+                          <i class="icon-reply-all"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
             </div>
-          </div>
+          </div> <!--Fin Row 2 footer-->
       </div>
     </div>
  </div>

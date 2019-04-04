@@ -11,18 +11,20 @@
 
 /* Contenedor general */
 #boxFluid{
+  overflow: hidden;
+  
 }
 /* Contenedor general */
 /* Card texel */
 #cardBox{
   max-width: 1024px;
   background-color: #eee;
-  margin:auto auto;
-  width: 95vw;
+  margin:0 auto;
   height: 95vh; 
   margin-top: 2vh;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); 
   text-align: center;
+  overflow: hidden;
 }
 /* Card texel */
 
@@ -50,22 +52,77 @@
   background-color: #FFC61F; 
   border-color:#FFC61F; 
   letter-spacing: 3px;
+  margin-top: 50px;
+  transition: all .2s;
 }
 .btn-texel:hover{
   border: 1px solid rgba(0,0,0,0.43);
   background-color: #FFC61F; 
 }
+
+.btn-texel:focus{
+  border: 1px solid rgba(0,0,0,0.43)!important;
+  background-color: orange!important;
+  
+}
+.btn-texel:{
+  background-color: red;
+}
+.col-logo,
+.col-text-index,
+.col-btn-index{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  position: relative;
+}
+.col-logo{
+  height: 20vh;
+  z-index: 200;
+}
+.col-text-index{
+  height: 53vh;
+}
+.col-btn-index{
+  height: 22vh;
+  padding-bottom: 20px;
+  z-index: 300;
+  margin: auto auto;
+}
+
+
+
 /* FIN Index Texel */
+
+
+
 /* SecondPage */
 .col-btn{
   display: flex;
-  justify-content: center;
   align-items: center;
   width: 100%;
-  height: 50vh;
+  height: 53vh;
+}
+.btn-left-sp{
+  justify-content: flex-end;
+}
+.btn-right-sp{
+  justify-content: flex-start;
 }
 .col-back{
-  height: 20vh;
+  
+}
+.col-footer-second-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: absolute;
+  bottom:0;
+  left: 0;
+  width: 100%;
+  padding: 0;
 }
 .btn-back{
   display: block;
@@ -90,28 +147,47 @@
 /*FIN SecondPage */
 
 /* Busqueda por DNI */
+.col-btn-dni{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 53vh;
+  /* background-color: red; */
+}
 .input-Search{
-  width: 95%;
+  max-width: 100%;
   height: 55px;
   border:none;
   border-radius:50px;
   font-size: 2em;
   padding-left: 25px;
+  margin-right: 10px;
   
   box-shadow:0 10px 20px rgba(0,0,0,0.19);
 }
 .input-Search:focus{
   outline: none;
+  border:1px solid rgba(0,0,0,0.43);
 }
 .input-Search:hover{
   
   border: 1px solid rgba(0,0,0,0.43);
 }
+.btn-dni{
+  width: 20%;
+  margin: 0;
+}
 /*FIN Busqueda por DNI */
 
 /* Nuevo Paciente */
+.col-btn-form{
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .form-New-P{
-  width: 100%;
+  max-width: 100%;
 }
 .label-form{
   width: 80%;
@@ -120,7 +196,7 @@
 .label-form span{
   color: #FFC61F;
   font-weight: 700;
-  font-size: 1.1em;
+  font-size: .9em;
   text-shadow: 0px 1px rgba(0,0,0,0.43);
 }
   .input-form{
@@ -128,7 +204,7 @@
     background-color: #eee;
     border-bottom:1.5px solid #FFC61F;
     width: 100%;
-    font-size: 1.3em;
+    font-size: .9em;
   }
   .input-form:focus{
     outline: none;
@@ -143,16 +219,26 @@
   }
   .btn-ingresarpaciente{
     width: 50%;
+    margin: 0;
   }
-  .col-back-nuevoPaciente{
-    height: 10vh;
+
+  .col-btn-newp{
+    height: 20vh;  
+    padding: 0; 
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 /*FIN Nuevo Paciente */
 
 /* pagina FUNCIONES */
+.rowUno{
+  height: 70vh;
+}
 .firts-colFunc-col8{
   width: 100%;
-  height:250px;
+  height:220px;
   display:flex;
   flex-direction:column;
   justify-content: space-between;
@@ -164,7 +250,7 @@
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height:150px;
+  height:130px;
   overflow: hidden;
 }
 .btn-doble{
@@ -231,8 +317,8 @@
 }
 
 .btn-inicio{
-  margin-bottom: 15px;
-  margin-top: 15px; 
+  margin-bottom: 40px;
+  margin-top: -20px; 
   box-shadow:0 10px 20px rgba(0,0,0,0.19); width: 30%; font-size: 1.4em; 
   background-color: #FFC61F; 
   border-color:#FFC61F; 
@@ -241,8 +327,8 @@
   /* border:1px solid rgba(0,0,0,0.43); */
 }
 .btn-pause{
-  margin-bottom: 15px;
-  margin-top: 15px;
+  margin-bottom: 40px;
+  margin-top: -20px;
   box-shadow:0 10px 20px rgba(0,0,0,0.19); font-size: 1.4em; background-color: #FFC61F; 
   border-color:#FFC61F;
   box-shadow:0 2px 5px rgba(0,0,0,0.19);
@@ -250,15 +336,19 @@
 }
 /*FIN col8 inputs */
 /* hover btn */
-.btn-hov{
-  background-color: #FFC61F!important;
+.btn-hov:hover{
+  background-color: orange!important;
   border-color: rgba(0,0,0,0.19)!important;
   color:#eee!important;
 }
 /* hover btn */
 /* col-info */
+.col-info{
+  margin-top: 45px;
+}
 .info{
-  border:2px solid rgba(0,0,0,0.23);
+  padding: 15px;
+  border:1px solid rgba(0,0,0,0.23);
   background-color:orange; 
   border-radius:5px; color: white;
   text-shadow:1px 1px rgba(0,0,0,0.23);
@@ -334,3 +424,99 @@ a{
     padding-left: 10px;
     border-bottom:1.5px solid rgba(0,0,0,0.43);
   }
+
+/* Config page  */
+.col-inputText{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.boxInputsOpciones1,
+.boxInputsOpciones2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 25px;
+}
+.labelConf{
+  width: 100%;
+  margin-left: 5px;
+}
+.labelConf span{
+  font-size: 1em;
+}
+.labelConf input{
+  border: 1px solid orange;
+  font-size: 1.2em;
+  width: 200px;
+  border-radius:5px;
+  background-color: #eee;
+  outline:none;
+  padding-left: 5px;
+}
+.rowChecks{
+  margin-top: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.rowChecks label{
+  margin: 0 25px;
+}
+
+/* Config page  */
+  /* footer */
+.card-footer{
+  background:orange;
+  border-top:2px solid rgba(0,0,0,0.11);
+  width: 100%;
+  height: 10vh;
+  padding: 0;
+  overflow: hidden;
+}
+.footer-row{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  height: 10vh;
+  
+  background:orange;
+
+}
+.btn-footer{
+  height: 9vh;
+  padding: 0;
+  line-height: 9vh;
+  transition: .1s;
+  cursor: pointer;
+}
+.btn-footer:nth-child(1){
+  border-right:2px solid rgba(0,0,0,0.11);
+}
+.btn-footer:nth-child(2){
+  border-right:2px solid rgba(0,0,0,0.11);
+}
+.btn-footer:nth-child(3){
+}
+.btn-footer:hover{
+  background-color: #FFC61F;
+  border:1.5px solid #FFC61F;
+}
+.btn-footer:hover .link-footer{
+  color: #eee;
+}
+.link-footer{
+  color:#eee; 
+  text-shadow:1px 1px rgba(0,0,0,0.19); 
+  font-size:1.2em; display:block; 
+  width: 100%; 
+  height: 100%; 
+  padding: 0;
+}
+/* footer */
